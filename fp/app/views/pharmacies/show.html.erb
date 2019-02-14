@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pharmacy.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @pharmacy.endereco %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @pharmacy.bairro %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @pharmacy.cep %>
+</p>
+
+<p>
+  <strong>Cnpj farmacia:</strong>
+  <%= @pharmacy.cnpj_farmacia %>
+</p>
+
+<p>
+  <strong>Cnpj matriz:</strong>
+  <%= @pharmacy.cnpj_matriz %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @pharmacy.ano %>
+</p>
+
+<p>
+  <strong>Mes:</strong>
+  <%= @pharmacy.mes %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @pharmacy.city %>
+</p>
+
+<%= link_to 'Edit', edit_pharmacy_path(@pharmacy) %> |
+<%= link_to 'Back', pharmacies_path %>

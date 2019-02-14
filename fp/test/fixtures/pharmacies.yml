@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  endereco: MyString
+  bairro: MyString
+  cep: MyString
+  cnpj_farmacia: MyString
+  cnpj_matriz: MyString
+  ano: 
+  mes: 
+  city: one
+
+two:
+  nome: MyString
+  endereco: MyString
+  bairro: MyString
+  cep: MyString
+  cnpj_farmacia: MyString
+  cnpj_matriz: MyString
+  ano: 
+  mes: 
+  city: two

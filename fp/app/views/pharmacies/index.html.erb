@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pharmacies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Endereco</th>
+      <th>Bairro</th>
+      <th>Cep</th>
+      <th>Cnpj farmacia</th>
+      <th>Cnpj matriz</th>
+      <th>Ano</th>
+      <th>Mes</th>
+      <th>City</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pharmacies.each do |pharmacy| %>
+      <tr>
+        <td><%= pharmacy.nome %></td>
+        <td><%= pharmacy.endereco %></td>
+        <td><%= pharmacy.bairro %></td>
+        <td><%= pharmacy.cep %></td>
+        <td><%= pharmacy.cnpj_farmacia %></td>
+        <td><%= pharmacy.cnpj_matriz %></td>
+        <td><%= pharmacy.ano %></td>
+        <td><%= pharmacy.mes %></td>
+        <td><%= pharmacy.city %></td>
+        <td><%= link_to 'Show', pharmacy %></td>
+        <td><%= link_to 'Edit', edit_pharmacy_path(pharmacy) %></td>
+        <td><%= link_to 'Destroy', pharmacy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pharmacy', new_pharmacy_path %>

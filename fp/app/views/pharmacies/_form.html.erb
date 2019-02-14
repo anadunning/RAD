@@ -1,0 +1,62 @@
+<%= form_with(model: pharmacy, local: true) do |form| %>
+  <% if pharmacy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pharmacy.errors.count, "error") %> prohibited this pharmacy from being saved:</h2>
+
+      <ul>
+      <% pharmacy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco %>
+    <%= form.text_field :endereco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bairro %>
+    <%= form.text_field :bairro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cep %>
+    <%= form.text_field :cep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cnpj_farmacia %>
+    <%= form.text_field :cnpj_farmacia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cnpj_matriz %>
+    <%= form.text_field :cnpj_matriz %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mes %>
+    <%= form.text_field :mes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
